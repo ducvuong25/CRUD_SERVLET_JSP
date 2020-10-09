@@ -5,6 +5,8 @@
  */
 package demo.controller;
 
+import demo.service.UserService;
+import demo.service.UserServiceImpl.UserServiceImpl;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -12,24 +14,21 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import demo.model.User;
-import demo.service.UserService;
-import demo.service.UserServiceImpl.UserServiceImpl;
 
 /**
  *
  * @author ducvuong25
  */
-@WebServlet(name = "DeleteServlet", urlPatterns = {"/Delete"})
-public class DeleteServlet extends HttpServlet {
+@WebServlet(name = "DelUserServlet", urlPatterns = {"/Delete"})
+public class DelUserServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        int id = Integer.parseInt(req.getParameter("id"));
         UserService userService = new UserServiceImpl();
+        int id = Integer.parseInt(req.getParameter("id"));
         userService.deleteUser(id);
-        getServletContext().getRequestDispatcher("/Admin").forward(req, resp);
-
+        resp.sendRedirect("ListUser");
     }
+
 
 }
