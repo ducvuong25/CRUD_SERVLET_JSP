@@ -17,4 +17,6 @@ public interface UserService {
 
     boolean checkLogin(String userName, String password);
 
+    User getUserByUserName(String userName);
+
 }

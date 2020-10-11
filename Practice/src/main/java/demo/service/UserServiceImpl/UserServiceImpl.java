@@ -51,4 +51,17 @@ public class UserServiceImpl implements UserService {
         return user;
     }
 
+    @Override
+    public User getUserByUserName(String userName) {
+        List<User> users = getAllUser();
+        User user = null;
+        for (User u : users) {
+            if (u.getUserName().equals(userName)) {
+                return u;
+            }
+        }
+        return user;
+    }
+    
+
 }

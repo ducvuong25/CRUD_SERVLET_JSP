@@ -14,6 +14,11 @@
     </head>
     <body>
         <a href="AddUser">add user</a>
+        <form action="Search" method="POST">
+            <label>search by user Name:</label>
+            <input type="text" name = "userName" required="">
+            <input type="submit" value="search">
+        </form>
         <table>
             <tr>
                 <th>id</th>

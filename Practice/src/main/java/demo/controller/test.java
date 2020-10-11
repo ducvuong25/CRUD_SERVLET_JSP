@@ -16,18 +16,12 @@ import java.util.logging.Logger;
 public class test {
 
     public static void main(String[] args) {
-        try {
-            UserService userService = new UserServiceImpl();
-            Connection c = ConnectionUtil.getConnection();
-            String preparedSQL = "select * from user where username = ? and password = ? ";
-            PreparedStatement ps = c.prepareStatement(preparedSQL);
-            ps.setString(1, "ducvuong25");
-            ps.setString(2, "vuong12");
-            ResultSet rs = ps.executeQuery();
-            System.out.println(rs == null);
-        } catch (SQLException ex) {
-            Logger.getLogger(test.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        UserService userService = new UserServiceImpl();
+        User user = userService.getUserByUserName("heocon");
+        if (user == null) {
+            System.out.println("khong tim thay");
+        }else {System.out.println("da tim thay user");}
+            
 
     
    
