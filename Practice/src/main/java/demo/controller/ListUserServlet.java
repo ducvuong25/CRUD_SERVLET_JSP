@@ -19,10 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "ListUserServlet", urlPatterns = {"/ListUser"})
 public class ListUserServlet extends HttpServlet {
 
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("dao vao doPOST");
-    }
+ 
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

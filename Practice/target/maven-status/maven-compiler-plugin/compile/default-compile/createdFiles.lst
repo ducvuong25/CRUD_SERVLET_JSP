@@ -1,3 +1,4 @@
+demo\Filter\Filter1.class
 demo\DAO\UserDAO.class
 demo\DAO\UserDAOImpl\UserDAOImpl.class
 demo\model\User.class

@@ -38,7 +38,7 @@ public class EditUserservlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int id = Integer.parseInt(req.getParameter("id"));
         String userName = req.getParameter("userName");
-        String password = req.getParameter("email");
+        String password = req.getParameter("password");
         String email = req.getParameter("email");
         String role = req.getParameter("role");
         User user = new User(id, userName, password, email, role);
