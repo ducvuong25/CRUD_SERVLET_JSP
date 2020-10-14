@@ -10,6 +10,7 @@
     <head>
         <title>login page</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/script.js"></script>
         <style>
             form {
                 margin: 10px auto;
@@ -40,6 +41,10 @@
             p{
                 color: red;
             }
+            #showpass {
+                position: fixed;
+
+            }
         </style>
     </head>
     <body>
@@ -47,9 +52,10 @@
             <div>   
                 <h1>Login to the system</h1>
                 <label>User Name:</label>
-                <input type="text" name="userName"  maxlength="30" required><br>
+                <input type="text" id ="userName" name="userName"  maxlength="30" required><br>
                 <label>Password:</label>
-                <input type="password" name="password" required><br>
+                <input type="password" id ="password" name="password" required>
+                <img id="showpass" src="https://img.icons8.com/fluent-systems-filled/24/000000/visible.png" alt="show pass"> 
                 <label>&nbsp;</label>
                 <input type="submit" value = "Login">
             </div>
