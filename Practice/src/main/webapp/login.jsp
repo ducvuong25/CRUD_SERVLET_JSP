@@ -12,6 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="js/script.js"></script>
         <style>
+            
             form {
                 margin: 10px auto;
                 width: 30%;
@@ -48,6 +49,7 @@
         </style>
     </head>
     <body>
+        <h1>hãy đăng nhập</h1>
         <form action="Login" method="POST">
             <div>   
                 <h1>Login to the system</h1>
