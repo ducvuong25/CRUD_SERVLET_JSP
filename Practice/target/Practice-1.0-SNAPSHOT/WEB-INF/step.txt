@@ -1,5 +1,0 @@
-1. tao trang login.jsp gom có form đăng nhập action="Login"
-2. thiet lap wellcome file "/login.jsp"
-3. tao servlet Login code method doPOST để kiểm tra đăng nhập thành công hay ko
-4. tao wellcome.jsp deu hien thi username do, cung vs mot lien ket listuser
-5. 
