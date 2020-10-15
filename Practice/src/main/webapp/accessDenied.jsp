@@ -1,6 +1,6 @@
 <%-- 
-    Document   : wellcome
-    Created on : Oct 9, 2020, 2:54:07 PM
+    Document   : accessDenied
+    Created on : Oct 14, 2020, 6:49:46 PM
     Author     : ducvuong25
 --%>
 
@@ -12,10 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>well come ${userName}</h1>
-        <a href="ListUser">list users</a>
-        <a href="Index">index page</a>
-        <a href="/Logout">Log out</a>
-
+        <h1>accessDenied</h1>
     </body>
 </html>

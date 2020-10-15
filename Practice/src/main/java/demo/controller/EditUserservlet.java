@@ -5,12 +5,10 @@
  */
 package demo.controller;
 
-import com.sun.org.apache.bcel.internal.generic.AALOAD;
 import demo.model.User;
 import demo.service.UserService;
 import demo.service.UserServiceImpl.UserServiceImpl;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

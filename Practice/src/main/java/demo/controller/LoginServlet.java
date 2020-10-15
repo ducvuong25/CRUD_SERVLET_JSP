@@ -21,10 +21,14 @@ public class LoginServlet extends HttpServlet {
         UserService userService = new UserServiceImpl();
         String url = "";
         boolean isMatch = userService.checkLogin(userName, password);
+
         if (isMatch) {
+            User user = userService.getUserByUserName(userName);
             url = "/wellcome.jsp";
             HttpSession session = req.getSession();
-            session.setMaxInactiveInterval(30);
+            session.setAttribute("user", user);
+
+//            session.setMaxInactiveInterval(30);
         } else {
             url = "/login.jsp";
             String message = "wrong user Name or password, try again!";
